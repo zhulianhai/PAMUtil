@@ -21,6 +21,11 @@
 		3B9DC6A918B4687200E34992 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9DC68B18B4687100E34992 /* UIKit.framework */; };
 		3B9DC6B118B4687200E34992 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B9DC6AF18B4687200E34992 /* InfoPlist.strings */; };
 		3B9DC6B318B4687200E34992 /* PAMUtilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9DC6B218B4687200E34992 /* PAMUtilTests.m */; };
+		3B9DC6C718B4698200E34992 /* CLLocation+Direction.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9DC6BE18B4698200E34992 /* CLLocation+Direction.m */; };
+		3B9DC6C818B4698200E34992 /* FSPUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9DC6C018B4698200E34992 /* FSPUtil.m */; };
+		3B9DC6C918B4698200E34992 /* UIKit+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9DC6C218B4698200E34992 /* UIKit+Util.m */; };
+		3B9DC6CA18B4698200E34992 /* UIPinchGestureRecognizer+PAMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9DC6C418B4698200E34992 /* UIPinchGestureRecognizer+PAMUtil.m */; };
+		3B9DC6CB18B4698200E34992 /* UICollectionViewFlowLayout+PAMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9DC6C618B4698200E34992 /* UICollectionViewFlowLayout+PAMUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,16 @@
 		3B9DC6AE18B4687200E34992 /* PAMUtilTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PAMUtilTests-Info.plist"; sourceTree = "<group>"; };
 		3B9DC6B018B4687200E34992 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B9DC6B218B4687200E34992 /* PAMUtilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PAMUtilTests.m; sourceTree = "<group>"; };
+		3B9DC6BD18B4698200E34992 /* CLLocation+Direction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+Direction.h"; sourceTree = "<group>"; };
+		3B9DC6BE18B4698200E34992 /* CLLocation+Direction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+Direction.m"; sourceTree = "<group>"; };
+		3B9DC6BF18B4698200E34992 /* FSPUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPUtil.h; sourceTree = "<group>"; };
+		3B9DC6C018B4698200E34992 /* FSPUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPUtil.m; sourceTree = "<group>"; };
+		3B9DC6C118B4698200E34992 /* UIKit+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+Util.h"; sourceTree = "<group>"; };
+		3B9DC6C218B4698200E34992 /* UIKit+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIKit+Util.m"; sourceTree = "<group>"; };
+		3B9DC6C318B4698200E34992 /* UIPinchGestureRecognizer+PAMUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPinchGestureRecognizer+PAMUtil.h"; sourceTree = "<group>"; };
+		3B9DC6C418B4698200E34992 /* UIPinchGestureRecognizer+PAMUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPinchGestureRecognizer+PAMUtil.m"; sourceTree = "<group>"; };
+		3B9DC6C518B4698200E34992 /* UICollectionViewFlowLayout+PAMUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewFlowLayout+PAMUtil.h"; sourceTree = "<group>"; };
+		3B9DC6C618B4698200E34992 /* UICollectionViewFlowLayout+PAMUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewFlowLayout+PAMUtil.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +127,7 @@
 		3B9DC68D18B4687100E34992 /* PAMUtil */ = {
 			isa = PBXGroup;
 			children = (
+				3B9DC6BC18B4696800E34992 /* src */,
 				3B9DC69618B4687100E34992 /* PAMAppDelegate.h */,
 				3B9DC69718B4687100E34992 /* PAMAppDelegate.m */,
 				3B9DC69918B4687100E34992 /* Main.storyboard */,
@@ -150,6 +166,23 @@
 				3B9DC6AF18B4687200E34992 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B9DC6BC18B4696800E34992 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				3B9DC6BD18B4698200E34992 /* CLLocation+Direction.h */,
+				3B9DC6BE18B4698200E34992 /* CLLocation+Direction.m */,
+				3B9DC6BF18B4698200E34992 /* FSPUtil.h */,
+				3B9DC6C018B4698200E34992 /* FSPUtil.m */,
+				3B9DC6C118B4698200E34992 /* UIKit+Util.h */,
+				3B9DC6C218B4698200E34992 /* UIKit+Util.m */,
+				3B9DC6C318B4698200E34992 /* UIPinchGestureRecognizer+PAMUtil.h */,
+				3B9DC6C418B4698200E34992 /* UIPinchGestureRecognizer+PAMUtil.m */,
+				3B9DC6C518B4698200E34992 /* UICollectionViewFlowLayout+PAMUtil.h */,
+				3B9DC6C618B4698200E34992 /* UICollectionViewFlowLayout+PAMUtil.m */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,8 +284,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B9DC69418B4687100E34992 /* main.m in Sources */,
+				3B9DC6CB18B4698200E34992 /* UICollectionViewFlowLayout+PAMUtil.m in Sources */,
+				3B9DC6C718B4698200E34992 /* CLLocation+Direction.m in Sources */,
+				3B9DC6C918B4698200E34992 /* UIKit+Util.m in Sources */,
 				3B9DC69E18B4687100E34992 /* PAMViewController.m in Sources */,
+				3B9DC6C818B4698200E34992 /* FSPUtil.m in Sources */,
 				3B9DC69818B4687100E34992 /* PAMAppDelegate.m in Sources */,
+				3B9DC6CA18B4698200E34992 /* UIPinchGestureRecognizer+PAMUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
